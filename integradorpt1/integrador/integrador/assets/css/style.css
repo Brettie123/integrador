@@ -1,0 +1,12 @@
+.login{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-container{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
