@@ -1,4 +1,4 @@
-// Clase Producto y constructor
+
 class Producto {
     constructor(nombre, precio, imagen) {
   
@@ -8,23 +8,19 @@ class Producto {
     }
   }
   
-  // Lista para almacenar los productos
   let listaProductos = [];
-  
-  // Obtener referencias a los elementos del formulario
+
   const nombreProductoInput = document.getElementById('input-NombreP');
   const precioProductoInput = document.getElementById('input-PrecioP');
   const imagenProductoInput = document.getElementById('input-imagenP')
   const btnAgregarProd = document.getElementById('btnAgregarP');
   const productosContainer = document.getElementById('contP');
   
-  // Agregar un evento al formulario para la validación
   document.getElementById('form-AgregP').addEventListener('submit', function(event) {
     event.preventDefault();
     AgregarProducto();
   });
-  
-  // Función para validar que los inputs estén completos y agregar el producto
+
   function AgregarProducto() {
     const nombrePr = nombreProductoInput.value.trim();
     const precioPr = parseFloat(precioProductoInput.value);
@@ -52,8 +48,7 @@ class Producto {
       imagenProductoInput.value='';
     }
   }
-  
-  // Función para crear el HTML de un producto y mostrarlo en la página
+
   function CrearHTMLProducto(producto) {
     const card = document.createElement('div');
     card.className = 'card';
@@ -116,10 +111,7 @@ class Producto {
     localStorage.setItem('productos', JSON.stringify(listaProductos));
   }
   
-  // Llamar a la función para cargar los productos al abrir la página
   cargarProductos();
-  
-  // Manejar evento de clic en el botón "Añadir al carrito"
   function AgregarAlCarrito(producto) {
     let carrito = JSON.parse(localStorage.getItem('AlCarrito')) || [];
     carrito.push(producto);
