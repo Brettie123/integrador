@@ -10,3 +10,88 @@
     justify-content: center;
     align-items: center;
 }
+#contP{
+display: flex ;
+justify-content: center ;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap:15px;
+}
+#carrito-container{
+    display: flex ;
+justify-content: center ;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap:15px;
+}
+
+.form-container h2{
+    color: white;
+    border: 3px;
+    border-color: black;
+    font-style: oblique ;
+}
+
+.container-tienda h1 {
+    color: white;
+    border: 3px;
+    border-color: black; 
+    font-style: oblique 
+}
+
+body{
+    background-image: url(../images/Spider-Man_\ Across\ the\ Spider-Verse\ Album\ Cover\ Wallpaper\ Macbook\ Pro.png);
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    color: #ffffff !important;
+}
+
+nav{
+background-color: #1a1a22;
+}
+
+nav img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.card{
+    background-color: #1a1a22;
+    color: white
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+.titulo-carrito{
+    color: white;
+    border: 3px;
+    border-color: black;
+    font-style: oblique ;
+    text-align: center;
+    margin-bottom: 65px;
+    margin-top: 55px;
+}
+
+#carrito-buttons{
+    text-align: center;
+    margin-bottom: 65px;
+    margin-top: 55px;
+}
+
+.login h1 {
+    color: white;
+    border: 3px;
+    border-color: black;
+    font-style: oblique ;
+    text-align: center;
+    margin-bottom: 65px;
+    margin-top: 55px;
+}
+
